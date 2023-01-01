@@ -1,0 +1,15 @@
+<html>
+<body style= "background-color:aquamarine;">
+{% block body %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="ENTER MOVIE NAME">
+    <input type="text" name="desc" placeholder="ENTER MOVIE DESCRIPTION">
+    <input type="text" name="year" placeholder="ENTER MOVIE YEAR">
+    <input type="file" name="imgs" >
+    <input type="submit">
+</form>
+{% endblock %}
+</body>
+</html>
